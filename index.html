@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+          <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <script Src="js/script.js" ></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <title>Acuthon</title>
+        <script>
+            var countBox =1;
+           // var boxName = 1;
+            function Addfunc()
+            {
+                    
+                    if(countBox==1)
+                    {
+                var boxName="Team Member"+countBox; 
+            document.getElementById('responce').innerHTML+='Name : <br/><input type="text" id="'+boxName+'" placeholder="'+boxName+'" "/><br/><br/>';
+                var boxName="Roll Number"; 
+            document.getElementById('responce').innerHTML+='Roll No : <br> <input type="text" id="'+boxName+'" placeholder="'+boxName+'" "/><br/><br/>';
+                countBox+=1;
+
+                    }
+                   else  if(countBox==2)
+                    {
+                var boxName="Team Member"+countBox; 
+            document.getElementById('responce1').innerHTML+='Name : <br/><input type="text" id="'+boxName+'" placeholder="'+boxName+'" "/><br/><br/>';
+                var boxName="Roll Number"; 
+            document.getElementById('responce1').innerHTML+='Roll No : <br> <input type="text" id="'+boxName+'" placeholder="'+boxName+'" "/><br/><br/>';
+                countBox+=1;
+                console.log(countBox);
+                    }
+                    else if(countBox==3)
+                    {
+                var boxName="Team Member"+countBox; 
+            document.getElementById('responce2').innerHTML+='Name : <br/><input type="text" id="'+boxName+'" value="'+boxName+'" "/><br/><br/>';
+                var boxName="Roll Number"; 
+            document.getElementById('responce2').innerHTML+='Roll No : <br> <input type="text" id="'+boxName+'" value="'+boxName+'" "/><br/><br/>';
+                countBox+=1;
+                if(countBox==4)
+                {
+                    
+                var ele=document.getElementById('add');
+                ele.parentNode.removeChild(ele);
+                console.log(countBox);
+                return false;
+              //  console.log(countBox);
+                    }
+                    }
+              // console.log(countBox);
+                else
+                {
+                var ele=document.getElementById('add');
+                ele.parentNode.removeChild(ele);
+                console.log(countBox);
+                return false;
+                
+                    //exit();
+                
+                }
+                //console.log(countBox);
+            }
+            //console.log(countBox);
+    </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                  <!--  <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">-->
+                   <!--- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">-->
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">ABOUT US</a></li>
+                        <li><a href="#cities">THEMES</a></li>
+                        <li><a href="#plans">PRIZE MONEY</a></li>
+                        <li><a href="#venue">VENUE</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1 id="acuthontitle"><b>ACUTHON</b></h1><h3 id="tagline"><small>A PLATFORM TO PORTRAY YOUR SKILLS</small></h3>
+                <a class="btn btn-full js--scroll-to-plans" href="#register">Register</a>
+            </div>
+            
+        </header>
+        
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>ABOUT &mdash; ACUTHON </h2>
+                <p class="long-copy">
+                    Programmers assemble! A long day of coding,talking,laughing,naping is waiting for you
+                          </p>
+
+            </div>
+            
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                    <h3>Once in 365 days/year</h3>
+                    <p>
+                        The most awaited event of the year is finally here. Coders it's your time of the year, utilize this opportunity to show your skills 
+                     </p>
+         
+                    
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Code for 24 hours</h3>
+                    <p>
+                        You're only few days away from the hackathon , you will not regret the time you have spent here 
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-nutrition-outline icon-big"></i>
+                    <h3>Food & Accomodation</h3>
+                    <p>
+                        Food and accomodation is provided and everything is included in the registration fee.           </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                    <h3>Take Away</h3>
+                    <p>
+                    You will get exposed to lot of cool ideas. In this phase you will get to know what is peer learning and team leading skills
+                     </p>
+                </div>
+            </div>   
+        </section> 
+
+        <!--<section class="section-meals">
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
+                    </figure>
+                </li>
+            </ul>
+        </section>-->
+        
+        
+      <!--  <section class="section-steps" id="works">
+            <div class="row">
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+                </div>
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step clearfix">
+                        <div>1</div>
+                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                    </div>
+                    <div class="works-step clearfix">
+                        <div>2</div>
+                        <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                    </div>
+                    <div class="works-step clearfix">
+                        <div>3</div>
+                        <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                    </div>
+                    
+                    <a href="#" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
+                    <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"></a>
+                </div>
+            </div>
+        </section>-->
+        
+        <section class="section-cities" id="cities">
+            <div class="row">
+                <h2>Themes for Acuthon</h2>
+            </div>
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                    <img src="https://th.bing.com/th/id/OIP.az0eLms286TQ__19_tI-EwHaEy?w=252&h=163&c=7&o=5&dpr=1.38&pid=1.7" alt="Lisbon">
+                    <h3>Machine Learning</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        Automation
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        Ml & AI Models
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="https://th.bing.com/th/id/OIP.OGDd0oIHqu5oO-LyI4r5HwHaE9?w=277&h=176&c=7&o=5&dpr=1.38&pid=1.7" alt="San Francisco">
+                    <h3>Web Development</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        Web Applications
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        Responsive
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="https://th.bing.com/th/id/OIP.hxXC5D1yCphZcsKsnp3wMAHaEk?w=267&h=164&c=7&o=5&dpr=1.38&pid=1.7" alt="Berlin">
+                    <h3>Mobile Development</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        Mobile Devlopment
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        Android & Flutter 
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="https://th.bing.com/th/id/OIP.KAwq1trHdK2bSqJLQMnpIAHaEK?w=299&h=168&c=7&o=5&dpr=1.38&pid=1.7" alt="London">
+                    <h3>IOT Hardware</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        Aurdino uno
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        Raspberry Pie
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>Your presence is what makes Acuthon possible!!!</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Everybody has a creative potential and from the moment you can express this creative potential ,you can start changing the world
+                        <cite>-Paulo Coelho</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Fun Fact <br>
+                        Developers during Acuthon : <br>
+                        We built an entire application in just 3 days.<br>
+                        Devlopers after Acuthon :<br>
+                        Adding that icon is going to take 3 weeks.
+                          <cite>- Inspired by Students</cite>
+                      </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                    There is only one thing stroger than all the armies in the world : and that is an idea whose time has come.
+        <cite>-Victor Hugo</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="section-plans" id="plans">
+            <div class="row">
+                <h2>Prize Money</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3 class="prize" style="color: black;">First Prize</h3>
+                           <p style="padding-left: 25%" class="plan-price">25000/-</p>
+                        </div>
+                        <div style="padding-left:22%;">
+                            
+                            <a href="#register1" class="btn btn-full">Grab,Give a shot<a>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3 style="color: black;">Second Prize</h3>
+                            <p style="padding-right:27%" class="plan-price">10000/-</p>
+                          <!--  <p class="plan-price-meal">You are a pro</p>-->
+                        </div>
+                       <!-- <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>-->
+                        <div> 
+                            <a href="#register1" class="btn btn-full">Grab,Give a shot</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3 class="prize" style="color: black;">Third Prize</h3>
+                            <p style="padding-left:24%" class="plan-price">5000/-</p>
+                            <!--<p class="plan-price-meal">You are good</p>-->
+                        </div>
+                        <!--<div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8 am to 12 pm</li>
+                                <li><i class="ion-ios-close-empty icon-small"></i></li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>-->
+                        <div>
+                            <a href="#register1" class="btn btn-full">Grab,Give a shot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="section-form js--section-plans" id="register" > 
+            <div class="row" id="register1">
+                <h2>Register Now!!!</h2>
+            </div>
+            <div class="row">
+                    <div class="contact">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="Team Name"> Team Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Team Name" id="Team Name" placeholder="Team Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="Team Leader Name">Team Leader Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Team Leader Name" id="email" placeholder="Team Leader Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="Team Leader Mail"> Team Leader Mail ID</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="Team Leader mail" id="Team Leader mail" placeholder="Team Leader mail" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="Roll Number1"> Roll Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="Roll Number1" id="Roll Number1" placeholder="Roll Number" required>
+                        </div>
+                    </div>
+
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="contact">Contact Number</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="contact" id="contact" placeholder="Contact Number" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="College Name">College Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" name="College Name" id="College Name" placeholder="College Name" required>
+                            </div>
+                        </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label> &nbsp;</label>
+                        </div>
+                        <div class="row">
+                        <div class="col span-2-of-3">
+        
+                        <div id="responce"> </div>
+                        <br>
+                        <div id="responce1"></div>
+                        <br>
+                        <div id="responce2"></div>
+                        <br>
+                        <input id="add" type="submit" value="Add Member" onclick="Addfunc()">
+                        <br>
+                        <div id="submit">
+                        <button type="submit" class="transfer">Save</button>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <br>
+        </section>
+        <h2 style="padding-bottom:50px; padding-top: -60px;">Venue</h2>
+        <section id="venue">
+          <!--<div id="maps"></div>-->
+
+                <script>
+                    function myMap() {
+                    var location= {
+                        lat:17.380735,lng:78.382074};
+ 
+                    var map = new google.maps.Map(document.getElementById("venue"),{
+                    zoom: 15,
+                    center: location
+                    });
+                var marker=new google.maps.Marker({
+                position: location,
+                map: map
+                })
+            }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGKX8_VPC8YnvbQnTDpihzr5AHRR05pQ8&callback=myMap"></script>
+</section>
+
+</body>
+       
+        
+        
+        <footer id="footer">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    This webpage was created for the course "Design and Develop a Killer Website Using HTML5 and CSS3" by Jonas Schmedtmann. No copyrights here.<br>
+                    This webpage is for you! So go and do whatever you want with it and have fun.
+                </p>
+                <p>
+                    Build with <i class="ion-ios-heart" style="color: #ea0000; padding: 0 3px;"></i> in the beautiful city of Lisbon, Portugal, March 2015.
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script> -->
+    <!-- <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script> -->
+    <!-- <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> -->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+    </body>  
+    
+</html>
